@@ -238,7 +238,7 @@ extension HudView {
         let showMessagesSelector = #selector(showMessages as (Void) -> Void)
         showMessages()
         timer.invalidate()
-        timer = Timer.scheduledTimer(timeInterval: 2.5, target: self, selector: showMessagesSelector, userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: APESuperHUD.appearance.messageTime, target: self, selector: showMessagesSelector, userInfo: nil, repeats: true)
     }
     
     func showMessages() {
@@ -257,7 +257,7 @@ extension HudView {
         let showFunnyMessagesSelector = #selector(showFunnyMessages as (Void) -> Void)
         showFunnyMessages()
         timer.invalidate()
-        timer = Timer.scheduledTimer(timeInterval: 2.5, target: self, selector: showFunnyMessagesSelector, userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: APESuperHUD.appearance.messageTime, target: self, selector: showFunnyMessagesSelector, userInfo: nil, repeats: true)
     }
     
     func showFunnyMessages() {

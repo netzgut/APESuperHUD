@@ -77,7 +77,10 @@ public struct HUDAppearance {
     
     /// The default display duration for the HUD
     public var defaultDurationTime: Double = 2.0
-    
+
+    /// The tim between message changes
+    public var messageTime: Double = 2.5
+
     /// Enables/disables removal of the HUD if the user taps on the screen
     public var cancelableOnTouch = false
     
