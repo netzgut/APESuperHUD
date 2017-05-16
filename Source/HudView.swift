@@ -244,6 +244,13 @@ extension HudView {
     func showMessages() {
         
         let message = loadingMessagesHandler.firstMessage()
+        
+        
+        if message == "" && APESuperHUD.appearance.keepLastMessage {
+            timer.invalidate()
+            return
+        }
+        
         if isActiveTimer {
             hideViewsAnimated(views: [informationLabel], completion: { [weak self] in
                 self?.showLoadingActivityIndicator(text: message, completion: nil)

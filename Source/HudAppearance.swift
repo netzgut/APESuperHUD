@@ -69,6 +69,9 @@ public struct HUDAppearance {
     /// Enables/disables shadow effect around the HUD
     public var shadow: Bool = true
     
+    /// Enables/disables if the last message should be kept until dismiss
+    public var keepLastMessage: Bool = true
+    
     /// The HUD fade in duration
     public var animateInTime: TimeInterval = 0.7
     
